@@ -1,0 +1,50 @@
+.container_s{ 
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% 60% 35% 10%;
+    
+    grid-template-areas: 
+                         "cabeza navegador"
+                         "seccion1 seccion1"
+                         "seccion2 seccion2"
+                         "pie pie";
+    background-color: white; 
+    row-gap: 15px;                  
+    height: 100vh; 
+     }
+ 
+ .cabeza{display: flex;
+    grid-area: cabeza;
+    justify-self: start;                 }
+
+.navegador { display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+    grid-area: navegador;
+    
+     }
+.botnav{padding: 15px;
+        color: blue;
+        text-decoration: none;
+}
+.botnav:hover{color:white ;
+background-color:aqua ;
+}
+
+.seccion1{ grid-area: seccion1;
+    background-image: url(portada.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20%;
+    min-height: 60vh;
+    width: 100%;
+    }
+  
+
+.seccion2{grid-area: seccion2;
+    display: grid;
+}
+
+.pie{grid-area: pie;
+    background-color: rgb(211, 211, 18);}
