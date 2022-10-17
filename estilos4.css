@@ -28,7 +28,7 @@ h1:first-of-type::selection {
      }
 
      
-body {background-image: url(/IMAGENES/portada.jpg); 
+body {background-image: url(IMAGENES/portada.jpg); 
     background-attachment: fixed; 
     background-size: cover;
     overflow-x: hidden
