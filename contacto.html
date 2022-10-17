@@ -8,28 +8,74 @@
     <link rel="stylesheet" href="estilos3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/592316c3b3.js" crossorigin="anonymous"></script>
-
+    <script type="module" src="validacion.js"></script>
 </head>
 
-<body><section class="container_3">
-    <div class="cabeza2">
-        <h1>Contactanos</h1></div>
-        <form action="show-data.html" target="_blank" class="form">
-            <label for="firstname">NOMBRE</label> <input class="input" type="text" name="firstname" placeholder="ingrese su nombre"> <br> <br>
-            <label for="lastname">APELLIDO</label> <input class="input" type="text" name="lastname" placeholder="ingrese su apellido"> <br> <br>
-            <label for="street">DIRECCION</label> <input class="input" type="text" name="street" placeholder="ingrese direccion"><br><br>
-            <label for="city">CIUDAD</label> <input class="input" type="text" name="city" placeholder="ingrese ciudad"><br><br>
-            <label for="zip code">CODIGO POSTAL</label> <input class="input" type="text"name= zip code> <br><br>
-            <label for="birthdate">FECHA NACIMIENTO </label> <input class="input" type="date"  name="birthday"><br> <br>
-            <label for="email">EMAIL</label> <input class="input" type="email" name="email"  required ><br><br>
-            </form>
-            <div class="nav2"> 
-                <a href="index.html" class="botnav">Volver</a>
+<body>
+    <section class="container_s">
+        <div class="cabeza">
+            <img src="/IMAGENES/logo1.png" alt="" width="auto" height="100">
+        </div> 
+        <div class="navegador"> 
+           <a href="inicio.html"   class="botnav" >INICIO</a>
+           <a href="menu.html"   class="botnav" >MENU</a>
+           <a href="sucursales.html" class="botnav">SUCURSALES</a>
+           <a href="contacto.html" class="botnav">CONTACTO</a>
+       </div> 
+    
+    <h1>MI COCINA VEGETARIANA</h1>
+   
+   <div class="seccion1">
+        
+        <form action="show-data.html" id="form-contacto" target="_blank" class="form">
+            <h1><img src="/IMAGENES/separado.png" class="separador izquierda" width="150px" height="auto"> Contactános <img src="/IMAGENES/separado.png" class="separador derecha"width="150px" height="auto"></h1>
+            <div>
+                <div>
+                    <label for="name"style = "float: left">Nombre y Apellido</label> <input class="input" type="text" name="firstname" placeholder="Ingresá tu nombre y apellido" style="width : 220px; height : auto" required id="nombre"> <br> <br>
+                </div>
+                <div>
+                    <label for="street">Dirección</label> <input class="input" type="text" name="street" placeholder="Dirección" style="width : 220px; height : auto" id="calle"><br><br>
+                </div>
             </div>
-              
-    
-    
+            <div>
+                <div>
+                <label for="city">Ciudad</label> <input class="input" type="text" name="city" placeholder="Ciudad" style="width : 220px; height : auto" id="ciudad"><br><br>
+                </div>
+                <div>
+                <label for="zip code">Código Postal</label> <input class="input" type="text"name= zip code id="code" placeholder="Código postal" style="width : 220px; height : auto" id="cp"> <br><br>
+                </div>
+            </div>
+            <div>
+                <div>
+                <label for="birthdate" >Fecha de Nacimiento </label> <input class="input" type="date"  name="birthdate" id="date" placeholder="Nacimiento" style="width : 220px; height : auto" required id="fecha"><br> <br>
+                </div>
+                <div>
+                <label for="email" >E-mail</label> <input class="input" type="email" name="email"  required placeholder="Email" style="width : 220px; height : auto" id="mail"><br><br>
+                </div>
+            </div>
+                <textarea id="message" style="width : 500px; height : 200px" required maxlength="140" rows="5" placeholder="Dejá tu mensaje"></textarea><br><br>
+                <button type="submit" value="submit" id="btn">Enviar</button>
+            </form>
+   </div>
+
+    <div id="menu" class="seccion2" class="content">
+    </div>
+
+    <div class="seccion3">
+    </div>
+        <footer class="pie">
+        <a href="https://twitter.com/home?lang=es"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://es-la.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://wa.link/9r2v18"><i class="fa-brands fa-whatsapp"></i> </a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <img src="/IMAGENES/codigo.png" alt="no" width="20px">
+        </footer>
+    </section>
+
 </body>
 </html>

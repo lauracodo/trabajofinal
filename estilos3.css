@@ -1,59 +1,179 @@
+::-moz-selection {
+    background: #93d344;
+  }
+  
+  ::selection {
+    background: #93d344;
+  }
+h1:first-of-type::selection {
+    color: white;
+}
+.container_s{ 
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+                         "cabeza navegador"
+                         "titulo titulo"
+                         "seccion1 seccion1"
+                         "pie pie";
+    background-color: #FFFDF7; 
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    height: fit-content;
+     }
 
-  .container_2{display: flex;
-    flex-direction: column;
+     
+body {background-image: url(/IMAGENES/portada.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    overflow-x: hidden
+}
+ .cabeza { display: flexbox;
+    grid-area: cabeza; 
+    justify-content: space-between; 
+    text-align: left;       
+   }
+   .navegador { display: flex;
+    padding: 15px;
+    padding-right: 100px;
+    grid-area: navegador;
+    text-align: center;
+    font-family: 'Oswald', serif;
+     }
 
-    
-
+.navegador a{padding: 20px;
+        color:  #2FB81A;
+        text-decoration: none;
+        font-size: 150%;
 } 
-      
- .cabeza2{ display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    color: #93d344;
-        font-family: 'Satisfy', cursive;
-}
-.botnav{padding: 15px;
-    color:  #93d344;
-    text-decoration: none;
-    font-size: 150%;
-}
+
 .botnav:hover{color:white ;
-background-color:aqua ;
+background-color: #FCAB10 ;
+border-radius: 50px;
 }
-.lista1{ display: flex;
-background-color: #93d344;
-justify-content: center;
-list-style: none;
-border-radius: 25em;
+
+.seccion1 { grid-area: seccion1;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    height: 850px;
+    margin-top: 50px;
+    background-color:#FCAB10;
+        }
+        
+.form{
+    display: flex;
+     align-items: center; 
+     color: black;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', serif;
 }
-.lista2{display: flex;
-    background-color: #93d344;
+.form label{
+    font-size: 120%;
+}
+.form h1{
+    color: white;
+    font-family: 'Montserrat', serif;
+    padding-bottom: 0px;
+        }
+
+.input, #message{
+    margin: 10px 30px;
+    text-align: center;
+    padding: 1em .5em;
+    border-radius: 10px;
+    border: 3px solid #2FB81A;
+        } 
+    
+h1 { display: flex;
+    color: #93d344;
+    font-family: 'Oswald', serif;
+    grid-area: titulo;
+    font-size: 500%;
+    text-align: center;
     justify-content: center;
-    list-style: none;
-    border-radius: 25em;
+    padding: 40px;
+    margin-bottom: 0;
+    padding-top: 0px;
+    margin-top: 30px;
+    }
+h2 {
+    color:antiquewhite;
+    font-family: 'Oswald', serif;
+    padding-right: 10px;
+    }
+    
+.separador {
+    filter: brightness(0) invert(1);
+    }
+
+#menu img { 
+    margin: 10px;
+    margin-left: 0;
+    row-gap: 10px;
+} 
+p {
+    color:antiquewhite;
+    font-family: 'Nunito', serif;
+    text-align: justify ;
+    padding-bottom: 30px
+}
+
+th {background-color:  #93d344;
+    border-radius: 15em;
 
 }
+
+.pie{display: flex;
+    justify-content:center;
+    align-items: center;
+    grid-area: pie;
+    width: 100%;
+    background-color:#FFFDF7 ;
+}
+
+.pie a { padding: 20px;}  
+.pie img { padding: 20px;} 
+
+
 .container_3{ display: flex;
     flex-direction: column;
     justify-content: center;
     color: #93d344;
     font-family: 'Satisfy', cursive;
-    
-
 }
-.form{display: flex;
-    align-items: center; 
-    color: black;
+form {
+    display: flex;
     flex-direction: column;
-    background-color: #93d344;
-    border-radius: 25em;
-    
-
 }
-.input{display: flex;
+form > div {
+    display: flex;
+    flex-direction: row;
+}
+form > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    max-width: 20%;
-    padding: 1em .5em;
-    border-radius: 25em;
 }
+#btn{
+    line-height: 1.5;
+    vertical-align: middle;
+    background-color: #FFFDF7;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    color: #2FB81A;
+    background-color: #FFFDF7;
+    border-color: #FCAB10;
+    font-family: 'Montserrat', serif;
+    cursor: pointer;
+}
+    #btn:hover{color:white ;
+        background-color: #93d344 ;
+        border-radius: 20px;
+        }
