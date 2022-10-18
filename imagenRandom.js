@@ -10,4 +10,4 @@ async function imagenRandom (query) {
     console.log(imagen_url);
     console.log(json);
 }
-imagenRandom("vegetarian food restaurant")
+imagenRandom("vegetarian food")
