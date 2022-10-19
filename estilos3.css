@@ -44,10 +44,11 @@ body {
     padding: 2%;
     padding-right: 8em;
     font-family: 'Oswald', serif;
+    width: 90%;
 }
 
 .navegador a {
-    padding: 20px;
+    padding: 1em;
     color: #2FB81A;
     text-decoration: none;
     font-size: 150%;
@@ -66,7 +67,7 @@ ul {
 .seccion1 {
     grid-area: seccion1;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 10em;
     width: 80vw;
     height: 650px;
     background-color: #FCAB10;
@@ -78,7 +79,7 @@ div h1 {
     color: #FFFDF7;
     font-family: 'Montserrat', serif;
     grid-area: titulo;
-    font-size: 350%;
+    font-size: ;
     text-align: center;
     justify-content: center;
     margin-top: 10px;
@@ -102,23 +103,14 @@ h1 {
     filter: brightness(0) invert(1);
 }
 
-h2 {
-    color: antiquewhite;
+h2 { 
+    color: #FFFDF7;
+    font-size: 5vw;
     font-family: 'Oswald', serif;
-    padding-right: 10px;
-}
-
-#menu img {
-    margin: 10px;
-    margin-left: 0;
-    row-gap: 10px;
-}
-
-p {
-    color: antiquewhite;
-    font-family: 'Nunito', serif;
-    text-align: justify;
-    padding-bottom: 30px
+    padding-top: 0.05rem;
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 
 th {
@@ -222,5 +214,26 @@ ul {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 600px) { 
+
+    .container_s{ 
+    width: 100%;
+    margin: 0 auto; 
+    
+    }
+
+    .seccion1{ 
+        width: 100%;
+        margin: 0 auto;
+        height: 50rem;
+    }
+    h1{
+font-size: 4rem;
+    }
+    h2{
+font-size: 4rem;
     }
 }

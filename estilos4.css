@@ -18,7 +18,7 @@ h1:first-of-type::selection {
         "seccion1 seccion1"
         "pie pie";
     background-color: #FFFDF7;
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
     height: fit-content;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .navegador a {
-    padding: 20px;
+    padding: 1em;
     color: #2FB81A;
     text-decoration: none;
     font-size: 150%;
@@ -62,9 +62,9 @@ body {
     grid-area: seccion1;
     margin: 0 auto;
     padding-bottom: 100px;
-    height: 850px;
+    height: 750px;
     margin-top: 0px;
-    width: 60vw;
+    width: 80%;
     margin: 0 auto;
     background-color: #FCAB10;
 }
@@ -112,7 +112,6 @@ h2 { display: flex;
     font-size: 5vw;
     font-family: 'Oswald', serif;
     padding-top: 0.05rem;
-    
 }
 
 .separador {
@@ -192,22 +191,34 @@ form>div>div {
     border-radius: 15em;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 412px) { 
+    .navegador{
+        text-align: center;
+    }
+    .navegador a{
+        font-size: 1rem;
+
+    }
 
     .container_s{ 
+    justify-content: center;
     width: 100%;
     margin: 0 auto; 
+    height: 90rem;
     }
 
     .seccion1{ 
-        width: 80%;
-        margin: 0 auto;
-        height: 75rem;
+        width: 70%;
+        height: 65rem;
     }
     h1{
-font-size: 3rem;
+font-size: 2rem;
     }
     h2{
-font-size: 3rem;
+font-size: 2rem;
     }
+    .cabeza img{
+       display: none; 
+    }
+
 }
