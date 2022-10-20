@@ -65,7 +65,7 @@ body {
     margin: 0 auto;
     padding-bottom: 100px;
     height: 750px;
-    margin-tfit-contentpx;
+    margin: fit-content;
     width: 80%;
     margin: 0 auto;
     background-color: #FCAB10;
@@ -206,7 +206,7 @@ form>div>div {
     .icon {
         display: block
     }    
-irst-child) {
+irst-child {
         display:none;
         margin-left: 1.5em;
     }
