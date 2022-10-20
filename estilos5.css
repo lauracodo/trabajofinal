@@ -15,11 +15,11 @@ h1:first-of-type::selection {
     grid-template-areas:
         "cabeza navegador"
         "titulo titulo"
-"seccion1 seccion1"
+        "seccion1 seccion1"
         "pie pie";
     background-color: #FFFDF7;
     width: 80%;
-    margin: 5 auto;
+    margin: 0 auto;
     height: fit-content;
 }
 
@@ -65,7 +65,7 @@ body {
     margin: 0 auto;
     padding-bottom: 100px;
     height: 750px;
-    margin-tfit-contentpx;
+    margin-top: 0px;
     width: 80%;
     margin: 0 auto;
     background-color: #FCAB10;
@@ -196,34 +196,29 @@ form>div>div {
 @media (max-width: 600px) { 
     .navegador{
         flex-direction: column;
+        align-items:flex-start;
         text-align: center;
-        align-items: flex-start;
-        
     }
     .navegador a{
         font-size: 1rem;
     }
     .icon {
-        display: block
-    }    
-irst-child) {
-        display:none;
-        margin-left: 1.5em;
-    }
-    .botnav {
-        display: none;
+        display:block;
     }
     .visible {
         display:block;
-    } 
+    }
+    .navegador:not(:first-child) {
+        display:none;
+        margin-left: 1.5em;
+    }
     .container_s{ 
     justify-content: center;
     grid-template-areas:
-        "navegador navegador"
-        "titulo titulo"
-        "seccion1 seccion1"
-        "pie pie";
-
+            "navegador navegador"
+            "titulo titulo"
+            "seccion1 seccion1"
+            "pie pie";
     width: 100%;
     margin: 0 auto; 
     height: 90rem;
