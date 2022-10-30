@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
-    <link rel="stylesheet" href="estilos4.css">
+    <link rel="stylesheet" href="estilos3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -13,9 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/592316c3b3.js" crossorigin="anonymous"></script>
-    <script type="module" src="validacion.js"></script>
-
-    <script src="./toggleResponsive.js"></script>
+    <script type="module" src="cambiarMapa.js"></script>
 </head>
 
 <body>
@@ -24,58 +22,51 @@
             <img src="IMAGENES/logo1.png" alt="" width="auto" height="100">
         </div> 
         <div class="navegador"> 
-            <a class="icon" onclick="toggleMobile()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="index.html"   class="botnav" >INICIO</a>
-            <a href="menu.html"   class="botnav" >MENU</a>
-            <a href="sucursales.html" class="botnav">SUCURSALES</a>
-            <a href="contacto.html" class="botnav">CONTACTO</a>
-        </div> 
-    
-    <h1>MI COCINA VEGETARIANA</h1>
-   
-   <div class="seccion1">
-        
-        <form action="show-data.html" id="form-contacto" target="_blank" class="form">
-            <h2><img src="IMAGENES/separado.png" class="separador" width="100px" height="auto"> Contactános <img src="IMAGENES/separado.png" class="separador"width="100px" height="auto"></h2>
-            <div>
-                <div>
-                    <label for="name"style = "float: left">Nombre y Apellido</label> <input class="input" type="text" name="firstname" placeholder="Ingresá tu nombre y apellido" style="width : 220px; height : auto" required id="nombre"> <br> <br>
-                </div>
-                <div>
-                    <label for="street">Dirección</label> <input class="input" type="text" name="street" placeholder="Dirección" style="width : 220px; height : auto" id="calle"><br><br>
-                </div>
-            </div>
-            <div>
-                <div>
-                <label for="city">Ciudad</label> <input class="input" type="text" name="city" placeholder="Ciudad" style="width : 220px; height : auto" id="ciudad"><br><br>
-                </div>
-                <div>
-                <label for="zip code">Código Postal</label> <input class="input" type="text"name= zip code id="code" placeholder="Código postal" style="width : 220px; height : auto" id="cp"> <br><br>
-                </div>
-            </div>
-            <div>
-                <div>
-                <label for="birthdate" >Fecha de Nacimiento </label> <input class="input" type="date"  name="birthdate" id="date" placeholder="Nacimiento" style="width : 220px; height : auto" required id="fecha"><br> <br>
-                </div>
-                <div>
-                <label for="email" >E-mail</label> <input class="input" type="email" name="email"  required placeholder="Email" style="width : 220px; height : auto" id="mail"><br><br>
-                </div>
-            </div>
-                <textarea id="message" style="width : 60%; height :60%" required maxlength="140" rows="5" placeholder="Dejá tu mensaje"></textarea><br><br>
-                <button type="submit" value="submit" id="btn">Enviar</button>
-            </form>
-   </div>
+           <a href="index.html"   class="botnav" >INICIO</a>
+           <a href="menu.html"   class="botnav" >MENU</a>
+           <a href="sucursales.html" class="botnav">SUCURSALES</a>
+           <a href="contacto.html" class="botnav">CONTACTO</a>
+       </div> 
+           <h1>MI COCINA VEGETARIANA</h1>
 
-        <footer class="pie">
+   <div class="seccion1">  
+    <section>
+        <div>
+            <h2><img src="IMAGENES/separado.png" class="separador izquierda" width="100px" height="auto">  Nuestras sucursales <img src="IMAGENES/separado.png" class="separador derecha"width="90px" height="auto"></h2>
+        </div>
+        <div class="mapas">
+            <ul>
+                <li>
+                    <a class="lugar" id="lugar1">Villa del parque</a>
+                </li>
+    
+                <li>
+                    <a class="lugar" id="lugar2">Parque chas</a>
+                </li>
+            </ul>
+            <div>
+            <div class="mapa" id="mapa1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.757096314573!2d-58.46104888502143!3d-34.58501228046432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e1e0ef775f%3A0x8c950fdb4fc889ce!2sAv%20Triunvirato%202899%2C%20C1427%20AAB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1664650998913!5m2!1ses-419!2sar"
+                    width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mapa" id="mapa2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1382836738915!2d-58.49899984312328!3d-34.59716736986457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6309ad2b173%3A0x1bb2fc756aeae25b!2sMi%20Barrio%20Hamburgueser%C3%ADa%20Villa%20del%20Parque!5e0!3m2!1ses-419!2sar!4v1664651420022!5m2!1ses-419!2sar"
+                    width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <footer class="pie">
         <a href="https://twitter.com/home?lang=es"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://es-la.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
         <a href="https://wa.link/9r2v18"><i class="fa-brands fa-whatsapp"></i> </a>
         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         <img src="IMAGENES/codigo.png" alt="" width="20px">
-        </footer>
+    </footer>
     </section>
-
 </body>
-</html>

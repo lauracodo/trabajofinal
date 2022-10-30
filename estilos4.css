@@ -1,3 +1,4 @@
+@media all  { 
 ::-moz-selection {
     background: #93d344;
 }
@@ -12,14 +13,15 @@ h1:first-of-type::selection {
 
 .container_s {
     display: grid;
+    grid-template-columns: auto auto;
     grid-template-areas:
         "cabeza navegador"
         "titulo titulo"
-"seccion1 seccion1"
+        "seccion1 seccion1"
         "pie pie";
     background-color: #FFFDF7;
-    width: 80%;
-    margin: 5 auto;
+    width: 80vw;
+    margin: 0 auto;
     height: fit-content;
 }
 
@@ -49,7 +51,7 @@ body {
     padding: 1em;
     color: #2FB81A;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1.5em;
 }
 .icon {
     display:none;
@@ -64,10 +66,8 @@ body {
     grid-area: seccion1;
     margin: 0 auto;
     padding-bottom: 100px;
-    height: 750px;
-    margin: fit-content;
-    width: 80%;
-    margin: 0 auto;
+    height: 50em;
+    width: 70vw;
     background-color: #FCAB10;
 }
 
@@ -98,7 +98,6 @@ body {
 }
 
 h1 {
-    display: flex;
     color: #93d344;
     font-family: 'Oswald', serif;
     grid-area: titulo;
@@ -192,8 +191,31 @@ form>div>div {
     background-color: #93d344;
     border-radius: 15em;
 }
+}
 
-@media (max-width: 600px) { 
+@media (min-width: 481px) and (max-width: 768px){
+    .navegador{
+    margin-left: 3em;
+        
+    }
+    .cabeza img{
+        display: none;
+    }    
+    .navegador a{
+        font-size: 1em;
+    }
+    .seccion1{ 
+        height: 65em;
+        margin-left: 1.5em;
+    }
+    .h1{
+    text-align: center;
+    padding-right: 10em;
+    }
+
+}
+
+@media  (min-width: 320px) and (max-width: 480px)  { 
     .navegador{
         flex-direction: column;
         text-align: center;
@@ -206,6 +228,7 @@ form>div>div {
     .icon {
         display: block
     }    
+
 irst-child {
         display:none;
         margin-left: 1.5em;
@@ -231,7 +254,7 @@ irst-child {
 
     .seccion1{ 
         width: 70%;
-        height: 65rem;
+        height: 65em;
     }
     h1{
 font-size: 2rem;
@@ -242,5 +265,4 @@ font-size: 2rem;
     .cabeza img{
        display: none; 
     }
-
 }
