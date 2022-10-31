@@ -79,7 +79,6 @@ div h1 {
     color: #FFFDF7;
     font-family: 'Montserrat', serif;
     grid-area: titulo;
-    font-size: ;
     text-align: center;
     justify-content: center;
     margin-top: 10px;
@@ -151,12 +150,18 @@ form>div>div {
     text-align: center;
 }
 
-.mapas {
+.lugares {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-
+.mapas {
+    display: flex;
+    justify-content: center;
+}
+section {
+    height: 40vh;
+}
 .mapa {
     margin-right: 20px;
 }
@@ -183,6 +188,14 @@ li {
     border: 1px solid #2FB81A;
     cursor: pointer;
     user-select: none;
+}
+
+iframe {
+    width: 60vw;
+    max-width: 600px;
+    height: 80vw;
+    min-height: 200px;
+    max-height: 450px;
 }
 
 li a {
@@ -235,5 +248,33 @@ font-size: 4rem;
     }
     h2{
 font-size: 4rem;
+    }
+}
+@media (max-width: 1000px) {
+    .lugares {
+        flex-direction: column;
+    }
+    .lugares li {
+        display: inline;
+        margin: 0 10px;
+
+    }
+    .lugares ul {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cabeza img{
+        display: none; 
+     }
+    .container_s { 
+        width: auto;
+        justify-content: center;
+        grid-template-areas:
+            "navegador navegador"
+            "titulo titulo"
+            "seccion1"
+            "pie pie";
     }
 }

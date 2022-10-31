@@ -6,7 +6,7 @@
 ::selection {
     background: #93d344;
 }
-
+}
 h1:first-of-type::selection {
     color: white;
 }
@@ -21,6 +21,8 @@ h1:first-of-type::selection {
         "pie pie";
     background-color: #FFFDF7;
     width: 80vw;
+    align-content: center;
+    justify-content: center;
     margin: 0 auto;
     height: fit-content;
 }
@@ -64,7 +66,7 @@ body {
 
 .seccion1 {
     grid-area: seccion1;
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 100px;
     height: 50em;
     width: 70vw;
@@ -182,6 +184,7 @@ form>div>div {
     font-size: 1rem;
     border-radius: 15em;
     color: #2FB81A;
+    margin-bottom: 0.5vw;
     font-family: 'Montserrat', serif;
     cursor: pointer;
 }
@@ -190,7 +193,6 @@ form>div>div {
     color: white;
     background-color: #93d344;
     border-radius: 15em;
-}
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -204,9 +206,8 @@ form>div>div {
     .navegador a{
         font-size: 1em;
     }
-    .seccion1{ 
-        height: 65em;
-        margin-left: 1.5em;
+    .seccion1{
+        padding-bottom: 20px;
     }
     .h1{
     text-align: center;
@@ -226,10 +227,10 @@ form>div>div {
         font-size: 1rem;
     }
     .icon {
-        display: block
+        display: block;
     }    
 
-irst-child {
+.navegador:not(first-child) {
         display:none;
         margin-left: 1.5em;
     }
@@ -241,12 +242,6 @@ irst-child {
     } 
     .container_s{ 
     justify-content: center;
-    grid-template-areas:
-        "navegador navegador"
-        "titulo titulo"
-        "seccion1 seccion1"
-        "pie pie";
-
     width: 100%;
     margin: 0 auto; 
     height: 90rem;
@@ -262,7 +257,18 @@ font-size: 2rem;
     h2{
 font-size: 2rem;
     }
+}
+@media (max-width: 1000px) {
     .cabeza img{
-       display: none; 
+        display: none; 
+     }
+    .container_s { 
+        width: auto;
+        justify-content: center;
+        grid-template-areas:
+            "navegador navegador"
+            "titulo titulo"
+            "seccion1"
+            "pie pie";
     }
 }

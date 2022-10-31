@@ -61,8 +61,8 @@ body {
 }
 
 .seccion1 {
+    position: relative;
     grid-area: seccion1;
-    height: 650px;
 }
 
 .seccion1 img {
@@ -80,10 +80,9 @@ body {
     transform: translate(-50%, 0);
     color: #FFFDF7;
     font-family: 'Montserrat', serif;
-    font-size: 300%;
+    font-size: 3vw;
     text-align: center;
     vertical-align: middle;
-    padding-top: 225px;
     text-shadow: 3px 3px 3px black;
 }
 
@@ -221,9 +220,17 @@ th {
     transform: scale(1.1);
 }
 
-@media (max-width: 575.98px) { 
-    .container_s {
-        width: 90%;
-        margin: 0 auto;
-}
+@media (max-width: 1000px) {
+    .cabeza img{
+        display: none; 
+     }
+    .container_s { 
+        width: auto;
+        justify-content: center;
+        grid-template-areas:
+            "navegador navegador"
+            "titulo titulo"
+            "seccion1"
+            "pie pie";
+    }
 }
