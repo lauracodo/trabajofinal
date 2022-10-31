@@ -24,7 +24,7 @@ h1:first-of-type::selection {
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    height: fit-content;
+    height: auto;
 }
 
 
@@ -218,8 +218,10 @@ form>div>div {
 
 @media  (min-width: 320px) and (max-width: 480px)  { 
     .navegador{
+        grid-area: auto;
         flex-direction: column;
         text-align: center;
+        flex-wrap: wrap;
         align-items: flex-start;
         
     }
@@ -230,10 +232,7 @@ form>div>div {
         display: block;
     }    
 
-.navegador:not(first-child) {
-        display:none;
-        margin-left: 1.5em;
-    }
+
     .botnav {
         display: none;
     }
@@ -244,7 +243,6 @@ form>div>div {
     justify-content: center;
     width: 100%;
     margin: 0 auto; 
-    height: 90rem;
     }
 
     .seccion1{ 
@@ -259,14 +257,14 @@ font-size: 2rem;
     }
 }
 @media (max-width: 1000px) {
-    .cabeza img{
+    .cabeza{
         display: none; 
      }
     .container_s { 
         width: auto;
         justify-content: center;
         grid-template-areas:
-            "navegador navegador"
+            "navegador"
             "titulo titulo"
             "seccion1"
             "pie pie";
