@@ -75,12 +75,12 @@ body {
 
 .textoimg {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
     color: #FFFDF7;
     font-family: 'Montserrat', serif;
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     vertical-align: middle;
     text-shadow: 3px 3px 3px black;
