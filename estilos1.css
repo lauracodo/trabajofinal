@@ -75,7 +75,7 @@ body {
 
 .textoimg {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     color: #FFFDF7;
